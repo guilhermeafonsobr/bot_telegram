@@ -100,7 +100,6 @@ app= Flask(__name__)
 
             #calculation 
                 d2 = d1[['store', 'prediction']].groupby('store').sum().reset_index()
-            
             #send message
                 msg = 'Store number {} will sell R${:,.2f} in the next 6 weeks'.format(
                 d2.['store'].values[0],
@@ -108,15 +107,13 @@ app= Flask(__name__)
 
                 send_message(chat_id, msg) 
                 return Response('Ok', status=200)
- 
             #send message
             else:
-                send_message(chat_id, 'Store not available')
-                return Response('Ok', status=200)
+            send_message(chat_id, 'Store not available')
+            return Response('Ok', status=200)
             else: 
             send_message(chat_id, 'Store ID is Wrong') 
             return Response ('OK', status=200) 
-
         else:
         return '<h1> Rossmann Telegram BOT <h1>'
 
