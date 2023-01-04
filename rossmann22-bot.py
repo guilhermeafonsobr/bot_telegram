@@ -32,7 +32,7 @@ def send_message(chat_id, text):
 
     return  None
 
-def load_dataset(): 
+def load_dataset(store_id): 
     #loading test dataset
     df10= pd.read_csv('test.csv')
     df_store_raw= pd.read_csv('store.csv')
