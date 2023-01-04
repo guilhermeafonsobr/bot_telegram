@@ -14,12 +14,11 @@ token = '5919692325:AAHk1sy3K0Q9SZ5aEVY5sdrT0gUWYHIW_JI'
 #get update
 #https://api.telegram.org/bot5919692325:AAHk1sy3K0Q9SZ5aEVY5sdrT0gUWYHIW_JI/getUpdates
 
-#webhoook 
+#webhoook localhostrun
 #https://api.telegram.org/bot5919692325:AAHk1sy3K0Q9SZ5aEVY5sdrT0gUWYHIW_JI/setWebhook?url=faltaurl
 
 # webhook render
-#webhoook
-#https://api.telegram.org/bot5919692325:AAHk1sy3K0Q9SZ5aEVY5sdrT0gUWYHIW_JI/setWebhook?url=faltaurl
+#https://api.telegram.org/bot5919692325:AAHk1sy3K0Q9SZ5aEVY5sdrT0gUWYHIW_JI/setWebhook?url=https://bot-telegram-rossmann-4ssz.onrender.com
 
 #send message 
 #https://api.telegram.org/bot5919692325:AAHk1sy3K0Q9SZ5aEVY5sdrT0gUWYHIW_JI/sendMessage?chat_id=873125626&text=Hi, Sabrina. I am doing good, thanks!
@@ -74,7 +73,7 @@ def parse_message(message):
     chat_id = message['message']['chat']['id']
     store_id = message['message']['chat']
     
-    store_id=store_id.replace('/', '')
+    store_id=store_id.replace('/', ' ')
 
 
     return chat_id, store_id
