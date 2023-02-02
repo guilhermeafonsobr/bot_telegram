@@ -1,2 +1,2 @@
-# bot_telegram
-Desenvolvimento de bot no telegram a fim de que o CFO da Rossmann consiga acessar as previsões de vendas de cada loja pelo celular, individualmente.
+# Sistema de previsão das lojas mobile
+Esse bot no telegram tem a atribuição de fornecer ao CFO da Rossmann as previsões de vendas de cada loja pelo celular, individualmente.
